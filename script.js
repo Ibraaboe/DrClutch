@@ -1,34 +1,16 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = {
-        Name: document.getElementById('name').value,
-        Number: document.getElementById('number').value,
-        Age: document.getElementById('age').value,
-        CarBrand: document.getElementById('carBrand').value,
-        CarModel: document.getElementById('carModel').value,
-        Year: document.getElementById('year').value
-    };
-
-    console.log('Submitting form data:', formData); // Log form data for debugging
-
-    fetch('https://script.google.com/macros/s/AKfycbw-ta-bH309-UTe5YOt3UkH4268L6utYMXj9_K7aEIFF9_rzbvnF5h8NvTSi2huHnzx/exec', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => response.json())  // Parse JSON response
-    .then(result => {
-        console.log('Response:', result);
-        if (result.result === 'success') {
-            document.getElementById('contactForm').classList.add('hidden');
-            document.getElementById('thankYouMessage').classList.remove('hidden');
-        } else {
-            console.error('Unexpected response:', result);
-        }
-    })
-    .catch(error => console.error('Error:', error));
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    
+    form.addEventListener('submit', (event) => {
+        form.classList.add('hidden');
+        thankYouMessage.classList.remove('hidden');
+    });
+    
+    // Example animation for form appearance
+    form.style.transition = 'opacity 1s ease-in-out';
+    form.style.opacity = '1';
+    
+    // Additional animations can be added as needed
 });
 
