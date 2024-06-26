@@ -13,19 +13,23 @@
             <img src="images/logo.png" alt="Motory Logo" class="logo">
         </header>
         <h2>Welcome to Motory / مرحبًا بك في موتوري</h2>
-        <form id="contactForm">
+        <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxBZiAJBYf8UVa3TTlNlM7dRPD_lsITbMtkK0I621B2gbEgxhtij0-eBxk_Qqve1HH8/exec">
             <div class="form-step step-1 active">
                 <div class="form-pair">
-                    <label for="name">Name / الاسم:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Email" required>
                 </div>
                 <div class="form-pair">
-                    <label for="number">Number / رقم الهاتف:</label>
-                    <input type="tel" id="number" name="number" required>
+                    <label for="name">Name / الاسم:</label>
+                    <input type="text" id="name" name="Name" placeholder="Name" required>
                 </div>
                 <button type="button" id="nextButton">Next / التالي</button>
             </div>
             <div class="form-step step-2">
+                <div class="form-pair">
+                    <label for="number">Number / رقم الهاتف:</label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
                 <div class="form-pair">
                     <label for="age">Age / العمر:</label>
                     <input type="number" id="age" name="age" required>
