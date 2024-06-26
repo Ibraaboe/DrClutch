@@ -12,7 +12,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     console.log('Submitting form data:', formData); // Log form data for debugging
 
-    fetch('https://script.google.com/macros/s/AKfycbzddBy5KEeDNi36kKXiev8mzXdHpGUu6HKrpTTRTvEXTbG_zVu5drRRClbYc2IiVvAf/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbw-ta-bH309-UTe5YOt3UkH4268L6utYMXj9_K7aEIFF9_rzbvnF5h8NvTSi2huHnzx/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
