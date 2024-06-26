@@ -17,17 +17,17 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     console.log('Submitting form data:', formData); // Log form data for debugging
 
-    fetch('https://script.google.com/macros/s/AKfycbyejeVipJscEgFnbHNT--hmwl2yysnmsOT5ELM0KID4am5jb3BKH_yqoPjQzFiZF1Ua/exec', {
+    fetch('https://script.google.com/macros/s/AKfycby8ANq5oSCs4JsH1uLwLr05G9dgDs_aKi6XWote9LbRy-emjOfdy6VkUXKYhtBrpLYO/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
             'Content-Type': 'application/json'
         }
     })
-    .then(response => response.text())
+    .then(response => response.json())  // Parse JSON response
     .then(result => {
         console.log('Response:', result);
-        if (result === 'Success') {
+        if (result.status === 'Success') {
             document.getElementById('contactForm').classList.add('hidden');
             document.getElementById('thankYouMessage').classList.remove('hidden');
         } else {
@@ -36,4 +36,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     })
     .catch(error => console.error('Error:', error));
 });
+
 
