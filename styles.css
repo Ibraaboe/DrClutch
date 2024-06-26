@@ -34,7 +34,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    opacity: 0; /* Start hidden for animation */
+    opacity: 1; /* Make sure form is visible */
 }
 
 .form-pair {
@@ -81,4 +81,5 @@ button:hover {
 .hidden {
     display: none;
 }
+
 
