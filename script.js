@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     console.log('Submitting form data:', formData); // Log form data for debugging
 
-    fetch('https://script.google.com/macros/s/AKfycby8ANq5oSCs4JsH1uLwLr05G9dgDs_aKi6XWote9LbRy-emjOfdy6VkUXKYhtBrpLYO/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwHEp3Dc-xgSUUb2604X9Ls7o91h4ILJg9zBDlClLKVlOLvJjbgZuBpTz4H3KMnpDl1/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
