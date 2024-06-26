@@ -14,40 +14,31 @@
         </header>
         <h2>Welcome to Motory / مرحبًا بك في موتوري</h2>
         <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbzddBy5KEeDNi36kKXiev8mzXdHpGUu6HKrpTTRTvEXTbG_zVu5drRRClbYc2IiVvAf/exec">
-            <div class="form-step step-1 active">
-                <div class="form-pair">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" placeholder="Email" required>
-                </div>
-                <div class="form-pair">
-                    <label for="name">Name / الاسم:</label>
-                    <input type="text" id="name" name="Name" placeholder="Name" required>
-                </div>
-                <button type="button" id="nextButton">Next / التالي</button>
+            <div class="form-pair">
+                <label for="name">Name / الاسم:</label>
+                <input type="text" id="name" name="Name" placeholder="Name" required>
             </div>
-            <div class="form-step step-2">
-                <div class="form-pair">
-                    <label for="number">Number / رقم الهاتف:</label>
-                    <input type="tel" id="number" name="number" required>
-                </div>
-                <div class="form-pair">
-                    <label for="age">Age / العمر:</label>
-                    <input type="number" id="age" name="age" required>
-                </div>
-                <div class="form-pair">
-                    <label for="carBrand">Car Brand / ماركة السيارة:</label>
-                    <input type="text" id="carBrand" name="carBrand" required>
-                </div>
-                <div class="form-pair">
-                    <label for="carModel">Car Model / طراز السيارة:</label>
-                    <input type="text" id="carModel" name="carModel" required>
-                </div>
-                <div class="form-pair">
-                    <label for="year">Year of Manufacture / سنة الصنع:</label>
-                    <input type="number" id="year" name="year" required>
-                </div>
-                <button type="submit">Submit / إرسال</button>
+            <div class="form-pair">
+                <label for="number">Phone Number / رقم الهاتف:</label>
+                <input type="tel" id="number" name="Number" placeholder="Phone Number" required>
             </div>
+            <div class="form-pair">
+                <label for="age">Age / العمر:</label>
+                <input type="number" id="age" name="Age" placeholder="Age" required>
+            </div>
+            <div class="form-pair">
+                <label for="carBrand">Car Brand / ماركة السيارة:</label>
+                <input type="text" id="carBrand" name="CarBrand" placeholder="Car Brand" required>
+            </div>
+            <div class="form-pair">
+                <label for="carModel">Car Model / طراز السيارة:</label>
+                <input type="text" id="carModel" name="CarModel" placeholder="Car Model" required>
+            </div>
+            <div class="form-pair">
+                <label for="year">Year of Manufacture / سنة الصنع:</label>
+                <input type="number" id="year" name="Year" placeholder="Year of Manufacture" required>
+            </div>
+            <button type="submit">Submit / إرسال</button>
         </form>
         <div id="thankYouMessage" class="hidden">
             <p>Thank you! We will contact you as soon as possible. / شكرا لك! سوف نتصل بك في أقرب وقت ممكن.</p>
@@ -56,5 +47,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
